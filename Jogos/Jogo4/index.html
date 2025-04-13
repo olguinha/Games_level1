@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é o mais forte?!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="game-card">
+          <h2>Desafio dos Heróis</h2>
+          <p>Monte sua equipe e enfrente os vilões mais temidos!</p>
+          <button id="startGameBtn">Iniciar Jogo</button>
+        </div>
+      </div>
+
+    <!-- Modal Principal -->
+    <div id="gameModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeGameModal">&times;</span>
+        <h2>Jogo em andamento...</h2>
+        <p id="informacoesJogador" class="resultado"></p>
+        <p id="informacoesComputador" class="resultado"></p>
+        <h3 id="resultadoFinal" class="resultado"></h3>
+      </div>
+    </div>
+  
+    <!-- Modal interna para digitar nomes -->
+    <div id="nameModal" class="inner-modal">
+      <div class="inner-modal-content">
+        <h2>Digite os nomes dos 3 personagens:</h2>
+        <input type="text" id="nome1" placeholder="Personagem 1">
+        <input type="text" id="nome2" placeholder="Personagem 2">
+        <input type="text" id="nome3" placeholder="Personagem 3">
+        <br><br>
+        <button id="confirmNamesBtn">Confirmar</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

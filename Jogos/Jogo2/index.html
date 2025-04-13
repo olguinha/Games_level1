@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo - Pedra, Papel ou Tesoura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <body>
+    <img src="imgs/download.png" alt="Logo" class="logo" />
+  
+    <div class="container">
+      <div class="content">
+        <h2>Jogos Divertidos!</h2>
+        <p>PEDRA, PAPEL ou TESOURA?</p>
+        <button onclick="abrirModalJogo()">Bora jogar!</button>
+      </div>
+    </div>
+  
+    <footer>OLGA DE OLIVEIRA | 2025</footer>
+  
+    <!-- Modal de idade -->
+    <div class="modal" id="modalIdade">
+      <div class="modal-content">
+        <h3>Digite sua idade:</h3>
+        <input type="number" id="idadeInput" placeholder="Ex: 18" />
+        <button onclick="verificarIdade()">Entrar</button>
+        <p class="erro-msg" id="erroMsg">Você precisa ter 18 anos ou mais para jogar.</p>
+      </div>
+    </div>
+  
+    <!-- Modal do jogo -->
+  <div class="modal" id="modalJogo">
+    <div class="modal-content">
+      <h3>Escolha sua jogada:</h3>
+      <button onclick="jogar(1)">🪨 Pedra</button>
+      <button onclick="jogar(2)">📄 Papel</button>
+      <button onclick="jogar(3)">✂️ Tesoura</button>
+      <div id="resultado"></div>
+      <button class="close-btn" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+
+  <script src="scrtop.js"></script>
+</body>
+  
+
+</html>
+

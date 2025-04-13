@@ -1,0 +1,102 @@
+
+body {
+    background: url("/img/perguntas.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Gabarito", sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: white;
+  }
+  
+  .logo {
+    text-align: end;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 30%;
+    max-width: 150px;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .conteudo-jogo {
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 10px #ff1b7b;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .conteudo-jogo:hover {
+    box-shadow: 0 0 10px #19caca;
+  }
+  
+  .questionario {
+    width: 100%;
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .pergunta {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .progresso {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .botao-resposta {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #ff1b7b;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .botao-resposta:hover {
+    background: #19caca;
+    font-weight: bold;
+  }
+  
+  .fim {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .fim .mensagem-final {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <body>
+        <div class="background-animation"></div>
+      
+        <div class="card">
+          <img src="/imgs/logo.avif" alt="Logo" class="logo">
+          <h2>Vamos Converter Moedas!</h2>
+          <p>Que tal converter qualquer valor agora?</p>
+          <button onclick="abrirModal()">Bora!</button>
+        </div>
+      
+        <!-- Modal -->
+        <div id="modalConversor" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h3>Conversor de Wons para Reais</h3>
+            <input type="number" id="valorWons" placeholder="Digite o valor em wons">
+            <button class="convert" onclick="converter()">Converter</button>
+            <p id="resultado"></p>
+          </div>
+        </div>
+      
+        <footer>Olga de Oliveira | desenvolvimento - 2025</footer>
+    
+    <script src="cod.js"></script>
+</body>
+</html>
+

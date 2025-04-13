@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidro Quebrado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo" />
+
+    <div class="container">
+      <div class="content">
+        <h2>Pra ganhar, é preciso coragem!</h2>
+        <p>Até mesmo para pisar em um chão feito de vidro.</p>
+        <button onclick="abrirModal()">Bora jogar!</button>
+      </div>
+    </div>
+  
+    <footer>Alura - Imersão DEV - 2025</footer>
+  
+    <!-- Modal -->
+    <div class="modal" id="modalJogo">
+      <div class="modal-content">
+        <h3 id="tituloModal">Jogo do Vidro</h3>
+        <p id="mensagem">Escolha o vidro correto!</p>
+        <div class="choices">
+          <button onclick="jogar(1)">Vidro 1</button>
+          <button onclick="jogar(2)">Vidro 2</button>
+          <button onclick="jogar(3)">Vidro 3</button>
+        </div>
+        <button class="close-btn" onclick="fecharModal()">Sair</button>
+      </div>
+    </div>
+  
+
+    <script src="script.js"></script>
+
+</body>
+</html>
